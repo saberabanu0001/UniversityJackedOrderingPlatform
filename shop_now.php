@@ -141,7 +141,6 @@ If registered, please login: <a href="home.php"> Click here </a>
         </div>
     </header>
 
-    <!-- Jacket 1 -->
     <!-- Computer Science Jackets Section -->
     <div class="jacketSection">
         <!-- Jacket 1 -->

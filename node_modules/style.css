@@ -1,0 +1,446 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    overflow: auto;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #095477;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoImg img {
+    max-height: 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar a.active {
+    color: red;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons .cart-btn,
+.icons .like-btn,
+.icons .add-to-cart-btn {
+    margin: 0 0.5rem;
+    color: #fff;
+    position: relative;
+}
+
+.icons .cart-btn sup,
+.icons .like-btn sup {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.8rem;
+}
+
+.user-box {
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    display: none;
+    padding: 1rem;
+}
+
+.user-box p {
+    margin: 0;
+}
+
+.user-box .btn {
+    display: block;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background: var(--muted-teal);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.user-box .logout-btn {
+    background: var(--muted-teal);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Banner Styles */
+.banner {
+    /* background-color: white;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #095477;
+    text-align: center;
+    padding-top: 10vh; */
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #095477;
+    position: relative;
+    margin-bottom: 450px;
+    padding-left: 5px;
+    
+    
+}
+.banner h1 {
+    padding-bottom: 25px;
+    margin-top: 9%;
+    padding-right: 50px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+/* shop button style Styles */
+.cn {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 40px;
+    margin-bottom: 40px !important;
+    background-color: #095477;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.cn a {
+    margin: 0 1rem;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.cn:hover {
+    background-color: #064e5c;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Product Styles */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.product {
+    background: #fff;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.product p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.product .btn {
+    display: block;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background: #095477;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.product .btn:hover {
+    background: #064e5c;
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-right: 0px; /* Move the search bar to the right */
+}
+
+.src {
+    font-family: 'Times New Roman';
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid white;
+    color: rgb(151, 148, 148);
+    border-right: none;
+    font-size: 18px;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btnn {
+    height: 30px; /* Increased height to match input */
+    background: white;
+    border: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0 15px; /* Padding for button */
+}
+
+.btnn:focus {
+    outline: none;
+}
+
+.src:focus {
+    outline: none;
+}
+
+/* form Styles */
+.form{
+    width: 250px;
+    height: 500px;
+    background: linear-gradient(to top, #095477 50%, #095477 50%);
+    position: absolute;
+    top: -90px;
+    left: 970px;
+    border-radius: 10px;
+    padding: 25px;
+}
+.form h3{
+    width: 200px;
+    font-family: sans-serif;
+    text-align: center;
+    color:#09262b;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+.form input{
+    width: 200px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+.form input:focus{
+    outline: none;
+}
+::placeholder{
+    color:white ;
+    font-family: Arial;
+}
+.bbtn{
+    width: 200px;
+    height: 40px;
+    background-color:rgb(245, 245, 248);
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    transition: 0.4s ease;
+    font-size:20px
+}
+.bbtn:hover{
+    background-color: rgb(93, 68, 169);
+    color: rgb(38, 38, 26);
+}
+.bbtn a{
+    text-decoration: none;
+    color: #2b94a7;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+    color: rgb(234 135 32);
+}
+/* Styles for Register Form */
+.register-form {
+    width: 300px;
+    background: linear-gradient(to top, #095477 50%, #095477 50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.register-form h3 {
+    width: 100%;
+    font-family: sans-serif;
+    text-align: center;
+    color: #09262b;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 auto 20px auto;
+    padding: 8px;
+}
+
+.register-form input {
+    width: calc(100% - 20px);
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    margin-left: 10px;
+}
+
+.register-form input:focus {
+    outline: none;
+}
+
+.register-form ::placeholder {
+    color: white;
+    font-family: Arial;
+}
+
+.register-form .bbtn {
+    width: calc(100% - 20px);
+    height: 40px;
+    background-color: rgb(245, 245, 248);
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    transition: 0.4s ease;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.register-form .bbtn:hover {
+    background-color: rgb(93, 68, 169);
+    color: rgb(38, 38, 26);
+}
+
+.register-form .bbtn a {
+    text-decoration: none;
+    color: #2b94a7;
+    font-weight: bold;
+}
+
+.register-form .link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+    color: rgb(234 135 32);
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .navbar a {
+        margin: 0.5rem 0;
+    }
+
+    .icons {
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar a {
+        margin: 0.5rem;
+    }
+}

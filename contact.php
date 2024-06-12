@@ -50,8 +50,8 @@
     <div class="contact-section">
         <h2>Contact Us</h2>
         <p>Have questions or feedback? We'd love to hear from you!</p>
-        <p>You can reach us by email at <a href="mailto:someone@example.com">Send email</a>.</p>   <!--mailto reference "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_mailto"-->
-        <p>For inquiries related to orders or customer support, please call us at 010********</p>
+        <p>You can reach us by email at <span style="color: blue;">******@sejong.ac.kr</span></p>  
+        <p>For inquiries related to orders or customer support, please call us at  <span style="color: blue;">010********</span></p>
         <p>Our office hours are Monday to Friday, 9:00 AM to 5:00 PM.</p>
     </div>
     <footer>

@@ -47,7 +47,7 @@ if (isset($_POST['username'])) {
 
         // Register user if no errors
         } else {
-            $password = md5($password_1); // Encrypt the password using md5
+            $password = md5($password_1); // Encrypting the password using md5     we can use hash function as well
 
             // echo $password; die();
 

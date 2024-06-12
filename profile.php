@@ -43,9 +43,10 @@ if ($user) {
             <button class="btnn">Search</button>
         </div>
         <div class="icons">
-           <a href="logout.php" style="color: white;"> Logout </a>
-           <a href="profile.php" style="color: white; margin-left: 10px;"> Edit Profile </a>
-        </div>
+        <a href="logout.php" style="color: white; text-decoration: none;">Logout</a>
+        <a href="profile.php" style="color: white; margin-left: 10px; text-decoration: none;">Edit Profile</a>
+    </div>
+
     </div>
 </header>
 <div style="display: flex; align-items: center;">
